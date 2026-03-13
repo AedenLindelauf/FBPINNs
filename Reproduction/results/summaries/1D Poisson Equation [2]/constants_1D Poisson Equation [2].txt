@@ -1,0 +1,25 @@
+run: 1D Poisson Equation [2]
+domain: <class 'fbpinns.domains.RectangularDomainND'>
+domain_init_kwargs: {'xmin': array([0.]), 'xmax': array([1.])}
+problem: <class '__main__.HarmonicOscillator1D'>
+problem_init_kwargs: {'amps': [12500, 1000], 'freqs': [25, 10]}
+decomposition: <class 'fbpinns.decompositions.RectangularDecompositionND'>
+decomposition_init_kwargs: {'subdomain_xs': [array([0., 1.])], 'subdomain_ws': [array([1.9, 1.9])], 'unnorm': (0.0, 1.0)}
+network: <class 'fbpinns.networks.FCN'>
+network_init_kwargs: {'layer_sizes': [1, 32, 1]}
+n_steps: 15000
+scheduler: <class 'fbpinns.schedulers.AllActiveSchedulerND'>
+scheduler_kwargs: {}
+ns: ((200,),)
+n_test: (500,)
+sampler: grid
+optimiser: <function adam at 0x0000022254E44670>
+optimiser_kwargs: {'learning_rate': 0.001}
+seed: 0
+summary_freq: 1000
+test_freq: 1000
+model_save_freq: 10000
+show_figures: False
+save_figures: True
+clear_output: True
+hostname: s20223097

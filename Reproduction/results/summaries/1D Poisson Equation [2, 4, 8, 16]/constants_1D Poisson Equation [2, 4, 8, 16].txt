@@ -1,0 +1,35 @@
+run: 1D Poisson Equation [2, 4, 8, 16]
+domain: <class 'fbpinns.domains.RectangularDomainND'>
+domain_init_kwargs: {'xmin': array([0.]), 'xmax': array([1.])}
+problem: <class '__main__.HarmonicOscillator1D'>
+problem_init_kwargs: {'amps': [12500, 1000], 'freqs': [25, 10]}
+decomposition: <class 'fbpinns.decompositions.RectangularDecompositionND'>
+decomposition_init_kwargs: {'subdomain_xs': [array([0.        , 1.        , 0.        , 0.33333333, 0.66666667,
+       1.        , 0.        , 0.14285714, 0.28571429, 0.42857143,
+       0.57142857, 0.71428571, 0.85714286, 1.        , 0.        ,
+       0.06666667, 0.13333333, 0.2       , 0.26666667, 0.33333333,
+       0.4       , 0.46666667, 0.53333333, 0.6       , 0.66666667,
+       0.73333333, 0.8       , 0.86666667, 0.93333333, 1.        ])], 'subdomain_ws': [array([1.9       , 1.9       , 0.63333333, 0.63333333, 0.63333333,
+       0.63333333, 0.27142857, 0.27142857, 0.27142857, 0.27142857,
+       0.27142857, 0.27142857, 0.27142857, 0.27142857, 0.12666667,
+       0.12666667, 0.12666667, 0.12666667, 0.12666667, 0.12666667,
+       0.12666667, 0.12666667, 0.12666667, 0.12666667, 0.12666667,
+       0.12666667, 0.12666667, 0.12666667, 0.12666667, 0.12666667])], 'unnorm': (0.0, 1.0)}
+network: <class 'fbpinns.networks.FCN'>
+network_init_kwargs: {'layer_sizes': [1, 32, 1]}
+n_steps: 15000
+scheduler: <class 'fbpinns.schedulers.AllActiveSchedulerND'>
+scheduler_kwargs: {}
+ns: ((200,),)
+n_test: (500,)
+sampler: grid
+optimiser: <function adam at 0x0000022254E44670>
+optimiser_kwargs: {'learning_rate': 0.001}
+seed: 0
+summary_freq: 1000
+test_freq: 1000
+model_save_freq: 10000
+show_figures: False
+save_figures: True
+clear_output: True
+hostname: s20223097
